@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Oceanfront Condominiums Galle owner information portal." />
+  <title>Oceanfront Condominiums Galle — Owner Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Oceanfront Condominiums Galle Owner Portal home">
+        <span class="brand-mark" aria-hidden="true">O</span>
+        <span>
+          <strong>Oceanfront Condominiums Galle</strong>
+          <small>Owner Portal</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#documents">Documents</a>
+        <a href="#help">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="eyebrow">Owner resources</span>
+        <h1>Important documents,<br />easy to find.</h1>
+        <p class="hero-copy">Search official governing documents, Council meeting minutes and the Owners’ Handbook from one reliable place.</p>
+
+        <div class="search-panel" role="search">
+          <label for="documentSearch">Search the document library</label>
+          <div class="search-row">
+            <input id="documentSearch" type="search" placeholder='Try “minutes”, “rules” or “by-laws”' autocomplete="off" />
+            <button id="clearSearch" class="secondary-button" type="button">Clear</button>
+          </div>
+        </div>
+
+        <div class="portal-meta" aria-label="Portal status">
+          <span>3 document collections</span>
+          <span>Sep 2026 portal update</span>
+          <span>Google Drive source files</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="documents-section" id="documents">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Document library</span>
+          <h2>Browse owner resources</h2>
+          <p>Choose a collection below. Files open in Google Drive, where you can view or download the latest available documents.</p>
+        </div>
+
+        <div class="filter-bar" aria-label="Filter document collections">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="governance">Governance</button>
+          <button class="filter-button" type="button" data-filter="minutes">Meeting minutes</button>
+          <button class="filter-button" type="button" data-filter="handbook">Handbook</button>
+        </div>
+
+        <p id="resultCount" class="result-count" aria-live="polite">Showing 3 collections</p>
+
+        <div id="documentGrid" class="document-grid">
+          <article class="document-card" data-category="handbook" data-search="owners handbook owner guidance procedures practical information residents reference guide">
+            <div class="card-number">01</div>
+            <div class="card-kicker">Reference guide</div>
+            <h3>Owners’ Handbook</h3>
+            <p>Practical information, procedures and guidance for owners and residents.</p>
+            <div class="tags"><span>Owner guidance</span><span>Procedures</span></div>
+            <a class="card-link" href="https://drive.google.com/drive/folders/13bYC6awFYJi4uPBYyfdvG92SYqwvI1Cm" target="_blank" rel="noopener noreferrer">Open collection <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="document-card" data-category="minutes" data-search="council meeting minutes council records march 2023 decisions meetings records">
+            <div class="card-number">02</div>
+            <div class="card-kicker">Council records</div>
+            <h3>Council Meeting Minutes</h3>
+            <p>Council records organised by term, with documents from March 2023 onward.</p>
+            <div class="tags"><span>March 2023 onward</span><span>Council decisions</span></div>
+            <a class="card-link" href="https://drive.google.com/drive/folders/1ubzzG08KfHOAfj_shNUpZUlNKOJwMhL_" target="_blank" rel="noopener noreferrer">Open collection <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="document-card" data-category="governance" data-search="constitution bylaws by-laws governance governing documents amendments rules proposed amendments">
+            <div class="card-number">03</div>
+            <div class="card-kicker">Governing documents</div>
+            <h3>Constitution &amp; By-laws</h3>
+            <p>Current governing documents and proposed amendments for owner reference.</p>
+            <div class="tags"><span>Constitution</span><span>Amendments</span></div>
+            <a class="card-link" href="https://drive.google.com/drive/folders/1LX2JXZKn4asyoVvnR0_qtSdcPxfPP_5K" target="_blank" rel="noopener noreferrer">Open collection <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+
+        <div id="emptyState" class="empty-state" hidden>
+          <div class="empty-icon">?</div>
+          <h3>No matching collection</h3>
+          <p>Try a broader term such as “minutes”, “rules” or “handbook”.</p>
+          <button id="showAllDocuments" class="primary-button" type="button">Show all documents</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="help-section" id="help">
+      <div class="container">
+        <div class="help-card">
+          <div class="help-icon" aria-hidden="true">?</div>
+          <div>
+            <h2>Having trouble opening a document?</h2>
+            <p>Google Drive permissions apply to each collection. If you see an access request, please contact the condominium office.</p>
+            <a href="#documents">Return to documents ↑</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Oceanfront Condominiums Galle</strong>
+        <span>Owner information portal</span>
+      </div>
+      <p><span class="status-dot" aria-hidden="true"></span> Shared by link · Please keep owner materials confidential</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
